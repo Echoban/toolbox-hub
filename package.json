@@ -1,0 +1,21 @@
+{
+  "name": "toolbox-hub",
+  "version": "1.0.0",
+  "description": "Modern toolbox collection website",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "build": "npm run build -w apps/web",
+    "db:migrate": "npm run db:migrate -w apps/api",
+    "db:seed": "npm run db:seed -w apps/api",
+    "db:studio": "npm run db:studio -w apps/api"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
