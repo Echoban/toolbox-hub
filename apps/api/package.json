@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node dist/app.js",
     "db:migrate": "prisma migrate dev",
-    "db:seed": "tsx src/seed.ts",
+    "db:seed": "node dist/seed.js",
     "db:studio": "prisma studio"
   },
   "dependencies": {
