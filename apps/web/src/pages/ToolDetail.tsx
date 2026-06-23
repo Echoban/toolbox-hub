@@ -11,6 +11,7 @@ import PasswordGenerator from '@/components/tools/PasswordGenerator';
 import ColorConverter from '@/components/tools/ColorConverter';
 import TimestampConverter from '@/components/tools/TimestampConverter';
 import TextDiff from '@/components/tools/TextDiff';
+import DesCrypto from '@/components/tools/DesCrypto';
 
 const componentMap: Record<string, React.ComponentType> = {
   JsonFormatter,
@@ -19,6 +20,7 @@ const componentMap: Record<string, React.ComponentType> = {
   ColorConverter,
   TimestampConverter,
   TextDiff,
+  DesCrypto,
 };
 
 export default function ToolDetail() {
